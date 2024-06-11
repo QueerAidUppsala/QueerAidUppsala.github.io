@@ -1,8 +1,7 @@
 ---
 layout: layout/default.liquid
+name: Home
 ---
-
-# Queer Aid
 
 
 Queering the Wordrobe every last saturday of the month.

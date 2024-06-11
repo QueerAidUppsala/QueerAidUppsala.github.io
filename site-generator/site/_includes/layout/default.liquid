@@ -3,12 +3,19 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Queer Aid</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>Website</title>
+    <link rel="stylesheet" href="/style.css">
     {% comment %} <link rel="icon" href="./favicon.ico" type="image/x-icon"> {% endcomment %}
   </head>
   <body>
-      {{ content }}
+    <div class="page">
+      <div class="logo">
+        <h1>Queer Aid</h1>
+      </div>
+        {% nav_bar "Home", "/index", "Events", "/events", "About", "/about", "Contact", "/contact" %}
+      <div class="content"> {{ content }}
+      </div>
+    </div>
   </body>
 </html>
 

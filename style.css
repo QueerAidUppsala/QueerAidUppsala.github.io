@@ -1,4 +1,91 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
 
 body {
-    margin: 50px;
+    background-color: cyan;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom, #B012CE 0%, #C4B8C5 100%)
 }
+
+.logo {
+    text-align: center;
+}
+.logo h1 {
+    font-size: 5vh;
+    font-weight: bolder;
+}
+
+.page {
+    margin: 0px 15%;
+    padding: 0px;
+    background-color: white;
+    /* height: 100vh; */
+    height: 100%;
+    flex-grow: 1;
+}
+
+.content {
+    margin: 5px;
+}
+
+#nav-bar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: #dddddd;
+}
+
+#nav-bar ul {
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline;
+}
+
+#nav-bar li {
+    float: left;
+    border-right: 1px solid #bbb;
+}
+
+#nav-bar li:hover {
+    background-color: grey;
+}
+
+#nav-bar .active {
+    background-color: grey;
+}
+
+#nav-bar li:last-child {
+    float:right;
+    border-right: none;
+}
+
+#nav-bar a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 600px) {
+    #nav-bar li  {
+        float: none;
+        border-right: none;
+    }
+    
+    #nav-bar li:last-child {
+        float: none;
+        border-right: none;
+    }
+
+    #nav-bar ul {
+        display: block;
+    }
+}
+
