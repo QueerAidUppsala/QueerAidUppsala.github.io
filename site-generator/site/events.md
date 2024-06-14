@@ -1,3 +1,3 @@
 ---
-layout: layout/default.liquid
+layout: layout/events.liquid
 ---

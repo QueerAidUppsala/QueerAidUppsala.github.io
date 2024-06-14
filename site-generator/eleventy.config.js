@@ -1,6 +1,15 @@
+const execSync = require('child_process').execSync;
+
 module.exports = function(eleventyConfig) {
-	eleventyConfig.addPassthroughCopy("./style.css");
-	eleventyConfig.addWatchTarget("./style.css");
+	eleventyConfig.addPassthroughCopy("style.css");
+	eleventyConfig.addWatchTarget("style.css");
+
+	eleventyConfig.on("eleventy.before", async ({ dir, runMode, outputMode }) => {
+		console.log("Generating event data");
+		output = '--out ./site/_data/events.json ';
+		input = '--in ./events/events.json ';
+		execSync('./events/events.py gen ' + output + input, { encoding: 'utf-8' });  // the default is 'buffer'
+	});
 
 	eleventyConfig.addLiquidShortcode(
 		"nav_bar",
@@ -10,7 +19,6 @@ module.exports = function(eleventyConfig) {
 
 			let result = "<div id =\"nav-bar\"> <ul>";
 			let active = this.page.filePathStem;
-			console.log(buttons);
 
 			for (let i = 0; i < buttons.length / 2; i++) {
 				let name = buttons[2 * i];

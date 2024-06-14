@@ -10,10 +10,10 @@ body {
     background: linear-gradient(to bottom, #B012CE 0%, #C4B8C5 100%)
 }
 
-.logo {
+#logo {
     text-align: center;
 }
-.logo h1 {
+#logo h1 {
     font-size: 5vh;
     font-weight: bolder;
 }
@@ -21,7 +21,6 @@ body {
 .page {
     margin: 0px 15%;
     padding: 0px;
-    background-color: white;
     /* height: 100vh; */
     height: 100%;
     flex-grow: 1;

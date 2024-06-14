@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website</title>
     <link rel="stylesheet" href="/style.css">
-    
+    {% comment %} <link rel="icon" href="./favicon.ico" type="image/x-icon"> {% endcomment %}
   </head>
   <body>
     <div class="page">
-      <div id="logo">
+      <div class="logo">
         <h1>Queer Aid</h1>
       </div>
-        <div id ="nav-bar"> <ul><li><a href="/index">Home</a></li><li><a href="/events">Events</a></li><li><a href="/about">About</a></li><li><a href="/contact" class="active">Contact</a></li></ul></div>
-      <div class="content"> 
+        {% nav_bar "Home", "/index", "Events", "/events", "About", "/about", "Contact", "/contact" %}
+      <div class="content"> {{ content }}
       </div>
     </div>
   </body>

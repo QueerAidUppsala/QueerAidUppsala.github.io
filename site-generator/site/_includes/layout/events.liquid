@@ -1,0 +1,18 @@
+---
+layout: layout/default.liquid
+---
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Location</th>
+    <th>Date</th>
+  </tr>
+{%- for event in events -%}
+  <tr>
+    <td>{{ event.name }}</td>
+    <td>{{ event.location }}</td>
+    <td>{{ event.date }}</td>
+  </tr>
+{%- endfor -%}
+</table>

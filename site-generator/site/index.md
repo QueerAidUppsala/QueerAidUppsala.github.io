@@ -1,6 +1,5 @@
 ---
 layout: layout/default.liquid
-name: Home
 ---
 
 
