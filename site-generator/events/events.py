@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 from calendar import monthcalendar
-from datetime import datetime
+from datetime import datetime, timedelta
 from pathlib import Path
 import argparse
 import json
@@ -56,9 +56,15 @@ def new_command():
     write_data(data)
 
 
-def event_to_date(event):
+def date_time_from_event(event):
     d, m = event['date'].split('/')
     return datetime(2024, int(m), int(d))
+
+
+def valid_event(event):
+    event_time = date_time_from_event(event)
+    yesterday = datetime.today() - timedelta(days=1)
+    return event_time >= yesterday
 
 
 def gen_command(args):
@@ -89,7 +95,8 @@ def gen_command(args):
         else:
             events.append(event_data)
 
-    events = sorted(events, key=event_to_date)
+    events = filter(valid_event, events)
+    events = sorted(events, key=date_time_from_event)
     write_data(events, args.output)
 
 
