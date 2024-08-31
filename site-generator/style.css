@@ -4,7 +4,9 @@ html, body {
 }
 
 body {
-    background-color: #CC6699;
+    background-color: #9C5E7B;
+    /* color: #86475C; */
+    /* background-color: #CC6699; */
     /* background-color: #FF99CC; */
     /* display: flex; */
     /* flex-direction: column; */
@@ -22,7 +24,8 @@ body {
 
 .page {
     /* background-color:  #FFBBAA; */
-    background-color: #FF99CC;
+    background-color: #FFAEB7;
+    /* background-color: #FF99CC; */
     margin: 0px 15%;
     padding: 0px;
     height: 100vh;
@@ -61,7 +64,7 @@ body {
 }
 
 #nav-bar .active {
-    background-color: #FF66CC;
+    background-color: #FFE4E1;
 ;
 }
 
