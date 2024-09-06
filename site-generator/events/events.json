@@ -10,5 +10,11 @@
         "location": "Statsparken",
         "time": "13:00",
         "date": "6/7"
+    },
+    {
+        "name": "Pride",
+        "location": "UKK",
+        "time": "10:00",
+        "date": "7/9"
     }
 ]

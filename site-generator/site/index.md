@@ -2,7 +2,9 @@
 layout: layout/default.liquid
 ---
 
+Welcome to Queer Aid website.
 
-Queering the Wordrobe every last saturday of the month.
+Feel free to check out over uppcoming events in the events tab
 
-29/6, 27/7
+Work in progress
+
