@@ -3,12 +3,6 @@
         "name": "Queering The Wardrobe",
         "location": "RFSL, Ljusb\u00e4rargatan 2",
         "time": "14:00",
-        "date": "31/8"
-    },
-    {
-        "name": "Queering The Wardrobe",
-        "location": "RFSL, Ljusb\u00e4rargatan 2",
-        "time": "14:00",
         "date": "28/9"
     },
     {
@@ -16,5 +10,11 @@
         "location": "RFSL, Ljusb\u00e4rargatan 2",
         "time": "14:00",
         "date": "26/10"
+    },
+    {
+        "name": "Queering The Wardrobe",
+        "location": "RFSL, Ljusb\u00e4rargatan 2",
+        "time": "14:00",
+        "date": "30/11"
     }
 ]
