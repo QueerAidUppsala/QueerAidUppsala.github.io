@@ -1,11 +1,5 @@
 [
     {
-        "name": "Queering The Wardrobe",
-        "location": "RFSL, Ljusb\u00e4rargatan 2",
-        "time": "14:00",
-        "date": "31/8"
-    },
-    {
         "name": "Pride",
         "location": "UKK",
         "time": "10:00",
@@ -22,5 +16,11 @@
         "location": "RFSL, Ljusb\u00e4rargatan 2",
         "time": "14:00",
         "date": "26/10"
+    },
+    {
+        "name": "Queering The Wardrobe",
+        "location": "RFSL, Ljusb\u00e4rargatan 2",
+        "time": "14:00",
+        "date": "30/11"
     }
 ]
